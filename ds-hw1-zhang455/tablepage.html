@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Idol</title>
+    <style>
+
+        header, nav, main, footer {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: large;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        header {
+            background-color: lightsalmon;
+            height: 75px;
+        }
+
+        nav {
+            background-color: lightgreen;
+
+            float: left;
+
+            /* After floating, we need to resize the nav because it defaults to the size of the content. */
+            width: 20%;
+            height: 300px;
+        }
+
+        main {
+            background-color: lightgoldenrodyellow;
+            height: 300px;
+
+            float: left;
+            width: 66%;
+        }
+
+        footer {
+            background-color: lightblue;
+            height: 60px;
+
+
+            clear: both;
+        }
+        ul.vertical {
+            list-style-type: none;
+            background-color: #ddd;
+            padding: 0px;
+            margin: 0px;
+
+            width: 20%;
+            min-width: 100px;
+            max-width: 150px;
+        }
+
+        ul.vertical a {
+            display: block;
+            padding: 6px 8px;
+            text-decoration: none;
+            color: black;
+        }
+
+        ul.vertical a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+      MY IDOL : JAY CHOU
+    </header>
+
+    <nav>
+        <ul class="vertical">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">About My Idol</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+      <h2>His Masterpieces</h2>
+      <table style="width:100%">
+<tr>
+  <th>Album Name</th>
+  <th>Release Date</th>
+  <th>Revenue Generated</th>
+  <th>Label</th>
+
+</tr>
+<tr>
+  <td>November's Chopin</td>
+  <td>2005</td>
+  <td>$10,000</td>
+  <td>Alfa Music</td>
+
+</tr>
+<tr>
+  <td>Fantasy</td>
+  <td>2001</td>
+  <td>$40,000</td>
+  <td>Meika</td>
+
+</tr>
+<tr>
+  <td>Still Fantasy</td>
+  <td>2006</td>
+  <td>$66,000</td>
+  <td>Alfa Music</td>
+
+</tr>
+<tr>
+  <td>Ye Hui Mei</td>
+  <td>2003</td>
+  <td>$89,000</td>
+  <td>Alfa Music</td>
+
+</tr>
+<tr>
+  <td>Common Jasmin Orange</td>
+  <td>2004</td>
+  <td>$1000,000</td>
+  <td>Alfa Music</td>
+
+</tr>
+
+
+</table>
+
+<form action="" method="post">
+
+
+
+
+
+
+<fieldset>
+    <legend>New Album Input</legend>
+    <label for="albumname">Album Name: </label>
+      <input type="text" name="albumname" id="albumname" placeholder="Enter the album name" required><br>
+    Release Date: <input type="date"><br>
+    Revenue: <input type="number" min="0" max="1000000000"><br>
+    <label for="label">Label: </label>
+    <select name="label" id="label">
+        <option></option>
+        <option value="Alfamusic">Alfa Music</option>
+        <option value="Meika">Meika</option>
+
+    </select><br>
+
+</fieldset>
+
+    <input class="button" type="submit" name="submit" id="submit" value="Add Album">
+
+
+</form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
